@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+  <title>Interactive Embossed Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Interactive Embossed Login</h1>
+    <section class="showcase">
+      <div class="glow glow-blue"></div>
+      <div class="glow glow-purple"></div>
+      <form id="loginForm" novalidate>
+        <h2>Welcome Back</h2>
+        <div class="field">
+          <input type="email" id="emailInput" required autocomplete="email" placeholder=" ">
+          <label for="emailInput">Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" id="passwordInput" required autocomplete="current-password" placeholder=" ">
+          <label for="passwordInput">Password</label>
+        </div>
+        <div class="msg-wrapper">
+          <div id="statusMsg" class="msg" role="status" aria-live="polite"></div>
+        </div>
+        <button type="submit" id="submitBtn">Sign In</button>
+        <button type="button" class="create-account" id="createAccount">Create an Account</button>
+      </form>
+      <div class="caption">Comment "Login" for code</div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
